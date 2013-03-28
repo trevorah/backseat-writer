@@ -16,17 +16,28 @@
       <div class="span2">
         <ul class="nav nav-pills nav-stacked">
           <li class="active">
-            <a href="#">Shakespeare</a>
+            <a href="#shakespeare" data-toggle="tab">Shakespeare</a>
+          </li>
+          <li>
+            <a href="#dickens" data-toggle="tab">Dickens</a>
           </li>
         </ul>
       </div>
       <div class="span10">
-        <textarea id="shakespeare-text" rows="15" class="span10" placeholder="Write something poetic..."></textarea>
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="shakespeare">
+            <textarea id="shakespeare-text" rows="15" class="span10" placeholder="Write something poetic..."></textarea>
+          </div>
+          <div class="tab-pane fade" id="dickens">
+            <textarea id="dickens-text" rows="15" class="span10" placeholder="Write something cheerfully squalid..."></textarea>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <script src="http://code.jquery.com/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/guesser.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
