@@ -14,3 +14,4 @@ var startGuessing = function(author) {
 
 startGuessing('shakespeare');
 startGuessing('dickens');
+startGuessing('bible');
