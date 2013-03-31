@@ -19,15 +19,10 @@
       <div class="row-fluid">
         <div class="span2">
           <ul class="nav nav-pills nav-stacked">
-            <li class="active">
-              <a href="#shakespeare" data-toggle="tab">Shakespeare</a>
-            </li>
-            <li>
-              <a href="#dickens" data-toggle="tab">Dickens</a>
-            </li>
-            <li>
-              <a href="#bible" data-toggle="tab">Bible</a>
-            </li>
+            <li class="active"><a href="#shakespeare" data-toggle="tab">Shakespeare</a></li>
+            <li><a href="#dickens" data-toggle="tab">Dickens</a></li>
+            <li><a href="#bible" data-toggle="tab">Bible</a></li>
+            <li><a href="#teach" data-toggle="tab">Teach the Writer</a></li>
           </ul>
         </div>
         <div class="span10">
@@ -40,6 +35,13 @@
             </div>
             <div class="tab-pane fade" id="bible">
               <textarea id="bible-text" rows="15" class="span10 lead" placeholder="Write something biblical..."></textarea>
+            </div>
+            <div class="tab-pane fade" id="teach">
+              <textarea id="teach-text" rows="15" class="span10" placeholder="Fill me with as much text as possible"></textarea>
+              <p>
+                <button id="learn-button" class="btn" type="button">Default button</button>
+              </p>
+              <textarea id="tought-text" rows="15" class="span10" placeholder="Write something new..."></textarea>
             </div>
           </div>
         </div>
@@ -55,6 +57,7 @@
   <script src="http://code.jquery.com/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/Guesser.js"></script>
+  <script src="js/learner.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
