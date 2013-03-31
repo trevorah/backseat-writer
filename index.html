@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css/footer.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Allan:bold" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div id="wrap">
     <div class="container">
       <div class="page-header">
-        <h1>Backseat Writer <small>Take a spin in the '48 Shannon<sup><a href="http://cm.bell-labs.com/cm/ms/what/shannonday/shannon1948.pdf">[1]</a></sup></small></h1>
+        <h1><span id="app-name">Backseat Writer</span> <small>Take a spin in the '48 Shannon<sup><a href="http://cm.bell-labs.com/cm/ms/what/shannonday/shannon1948.pdf">[1]</a></sup></small></h1>
       </div>
     </div>
     <div class="container-fluid">
@@ -31,7 +33,7 @@
         <div class="span10">
           <div class="tab-content">
             <div class="tab-pane fade in active" id="shakespeare">
-              <textarea id="shakespeare-text" rows="15" class="span10" placeholder="Write something poetic..."></textarea>
+              <textarea id="shakespeare-text" rows="15" class="span10" autofocus placeholder="Write something poetic..."></textarea>
             </div>
             <div class="tab-pane fade" id="dickens">
               <textarea id="dickens-text" rows="15" class="span10" placeholder="Write something cheerfully squalid..."></textarea>
