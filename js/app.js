@@ -3,9 +3,16 @@ var startGuessing = function(author) {
 		var guesser = new Guesser(data);
 
 		$('#' + author + '-text').keyup(function(event) {
+			var wordsToComplete = Math.floor(Math.random() * 5);
 			var string = $(this).val();
-			for(var i = 0; i < 100; i++) {
-				string = string + guesser.findNext(string);
+			var nextChar;
+			var numberOfWords = 0;
+			while(numberOfWords < wordsToComplete && nextChar !== '') {
+				nextChar = guesser.findNext(string);
+				if(nextChar === " ") {
+					numberOfWords++;
+				}
+				string = string + nextChar;
 			}
 			$(this).val(string);
 		});
