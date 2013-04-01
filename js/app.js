@@ -1,5 +1,5 @@
 var startGuessing = function(author) {
-	$.getJSON(author + '.json', function(data) {
+	$.getJSON('writers/' + author + '.json', function(data) {
 		var guesser = new Guesser(data);
 
 		$('#' + author + '-text').keyup(function(event) {
