@@ -26,12 +26,10 @@ var getSomeWords = function(text, guesser) {
 }
 
 $('#learn-button').click(function(event) {
-	var teachingMaterial = $('#teach-text');
-	teachingMaterial.hide();
-	var text = teachingMaterial.val();
+	var text = $('#teach-text').val();
 	var data = learn(text);
 	var guesser = new Guesser(data);
-	$('#tought-text').show().keyup(function(event) {
+	$('#tought-text').removeAttr('disabled').off().keyup(function(event) {
 		var string = $(this).val();
 		string = getSomeWords(string, guesser);
 		$(this).val(string);
