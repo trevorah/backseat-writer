@@ -3,7 +3,7 @@ Backseat Writer
 
 How do I run this locally?
 --------------------------
-You are going to need a static webserver to see anything useful, so try something like [mongoose](https://code.google.com/p/mongoose) or whatever floats your boat.
+You are going to need a static webserver to see anything useful, so try something like [mongoose](https://code.google.com/p/mongoose) or whatever floats your boat. It's a [GitHub page](http://trevorah.github.com/backseat-writer) anyway, so you can have a look that way.
 
 How does it all work?
 ---------------------
@@ -32,5 +32,8 @@ Wow. So how big is "n" for Backseat Writer?
 
 Seems fair. Can I poke around?
 ------------------------------
-
 Of course! And if you find something cool or make the app a little nicer, send a pull request. I'll probably accept it right away. :)
+
+And who made this?
+------------------
+Some poor sap called Andy Trevorah ([GitHub](https://github.com/trevorah) - [Twitter](https://twitter.com/AndyTrevorah)).
