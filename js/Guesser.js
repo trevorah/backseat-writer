@@ -16,7 +16,9 @@ Guesser.prototype.convertToLetterArray = function(data) {
 };
 
 Guesser.prototype.get = function(object, trail, depth) {
-	if(depth < trail.length -1) {
+	if(!object) {
+		return "";
+	} else if(depth < trail.length -1) {
 		var next = trail[depth];
 		return this.get(object[next], trail, depth+1);
 	} else {
@@ -24,6 +26,9 @@ Guesser.prototype.get = function(object, trail, depth) {
 		var finalLetter = trail[depth];
 		var obj = object[finalLetter];
 		var cumalativeWeight = 0;
+		if(!obj) {
+			return "";
+		}
 		var choice = Object.keys(obj)[0];
 		if(!choice) {
 			return "";
